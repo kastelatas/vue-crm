@@ -1,0 +1,150 @@
+$main-dark: #1f1f1f;
+$secondary-dark: #333333;
+$text-dark: #868686;
+$text-dark-lighten: #dddddd;
+$text-success: #219653;
+$text-orange: #ff8d72;
+$text-danger: #ff5367;
+
+.dark {
+  .chatting-row,
+  .message-dialog-box,
+  .messages-text_left,
+  .distribution-field,
+  .btn-orange-border,
+  .right-sidebar-btn-top,
+  .distribution-btn-field,
+  .tooltip-inner,
+  .chat-current-user {
+    background-color: $secondary-dark !important;
+  }
+
+  .right-sidebar {
+    .operator {
+      color: $text-dark
+    }
+
+    .mailer-total-panel {
+      background-color: $main-dark !important;
+      box-shadow: 0 0 4px 0 #f0f0f0 !important;
+    }
+
+    .mailer-panel-user {
+      background-color: $main-dark !important;
+      border-color: $secondary-dark !important;
+    }
+
+    .right-sidebar-btn-top {
+      background-color: $main-dark !important;
+    }
+
+    .after-chat-texts-panel .messages-count {
+      color: $text-dark-lighten;
+    }
+  }
+
+  .distribution-user {
+    border-color: $secondary-dark !important;
+  }
+
+  .chat-current-user {
+    background-color: $main-dark !important;
+    color: $text-dark-lighten !important;
+  }
+
+  .distribution-field {
+    box-shadow: none !important;
+  }
+
+  .btn-orange-border {
+    color: $text-danger;
+    border-color: $text-danger;
+  }
+
+  .btn-orange {
+    color: white;
+    background-color: $text-danger;
+    border-color: $text-danger;
+  }
+
+  .chat-window {
+    box-shadow: 4px 4px 21px 0px rgba(41, 41, 41, 1);
+  }
+
+  .chat-user-box-one,
+  .messages-text_right,
+  .right-sidebar,
+  .distribution-user,
+  .chat-window {
+    background-color: $main-dark !important;
+  }
+
+  .message-text p,
+  .distribution-user-title,
+  .chat-user-box-one h6 {
+    color: white !important;
+  }
+
+  .dispatch {
+    &:hover {
+      span {
+        color: white !important;
+      }
+    }
+
+    & > span {
+      color: $text-dark !important;
+    }
+  }
+
+  .dispatch-active {
+    background-color: $secondary-dark !important;
+    color: white !important;
+  }
+
+  .messages-text_right {
+    border-color: $secondary-dark;
+  }
+
+  .chat-user-box-one {
+    &_green {
+      background-color: $text-success !important;
+    }
+
+    &_orange {
+      background-color: $text-orange !important;
+    }
+
+    &_range {
+      background-color: $text-danger !important;
+    }
+
+    &.birthday {
+      background-image: url("../img/birthday-dark.png");
+    }
+  }
+
+  .time-date-message,
+  .distribution-user-text,
+  .chat-current-id {
+    color: $text-dark !important;
+  }
+
+  .message-dialog-box {
+    textarea {
+      color: white !important;
+      border-color: $text-dark;
+    }
+  }
+
+  /*
+    Tooltip
+  */
+  .tooltip-inner {
+    color: #b6b7b8 !important;
+
+    > div {
+      border-color: $main-dark !important;
+    }
+  }
+}
